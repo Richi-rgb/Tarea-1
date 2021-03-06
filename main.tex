@@ -13,15 +13,15 @@
         \vspace*{1cm}
             
         \Huge
-        \textbf{Título del trabajo}
+        \textbf{Desafío de descripción}
             
         \vspace{0.5cm}
         \LARGE
-        Subtítulo
+        Llevar un objeto de una posición a otra
             
         \vspace{1.5cm}
             
-        \textbf{Nombres y Apellidos del autor}
+        \textbf{Ricardo Echeverri Cano}
             
         \vfill
             
@@ -38,71 +38,33 @@
 
 \tableofcontents
 \newpage
-\section{Sección introductoria}\label{intro}
-Esta es la primera sección, podemos agregar algunos elementos adicionales y todo será escrito correctamente. Más aún, si una palabra es demasiado larga y tiene que ser truncada, babel tratará de truncarla correctamente dependiendo del idioma.
+\section{Introducción}\label{intro}
+Explicaremos el proceso detallado que se debe de realizar para mover dos objetos de una posición A a una posición B.
 
-\section{Sección de contenido} \label{contenido}
-Esta sección es para agregar toda la información correspondiente con código, citas, etc.
-\subsection{Citación}
-Vamos a citar por ejemplo un artículo de \textbf{Albert Einstein} \cite{einstein}.
-También es posible citar libros \cite{dirac} o documentos en línea \cite{knuthwebsite}.\\\\
-Revisar en la última sección el formato de las referencias en IEEE.
+\section{Objetos a utilizar} \label{objetos}
+\begin{itemize}
+    \item Dos tarjetas con dimensiones igualas.
+    \item Hoja de papel en perfecto estado y con una marca (*) en una de sus caras.
+\end{itemize}
+Este ejercicio se va a realizar en una superficie horizontal plana (mesa, etc.).
 
-\subsection{Incluir código en el documento}
-%
-A continuación, se presenta el código \ref{codigo_ejemplo}, que nos permite incluir en el informe partes de programa que requieran una explicación adicional.
-\begin{lstlisting}[language=C++, label=codigo_ejemplo]
-// Programa desarrollado, compilado y ejecutado en https://www.onlinegdb.com
-#include <iostream>
-
-/*
- * Esto es un comentario de varias lineas
- */
-
-// Comentario de una sola linea
-
-#define N 10
-
-using namespace std;
-
-int main()
-{
-    
-    for( int i = 0 ; i < N ; i++ ){
-        
-        if( !(i % 2) )
-            cout << " El valor de i es -> " << i << endl;
-    }
-    
-    return 0;
-}
-
-//Resultado programa
-
-/*
-El valor de i es -> 0
-El valor de i es -> 2
-El valor de i es -> 4
-El valor de i es -> 6
-El valor de i es -> 8
-*/
-\end{lstlisting}
-En la sección \ref{imagenes}, se presentará como añadir ilustraciones al texto.
-
-\section{Inclusión de imágenes} \label{imagenes}
-
-En la Figura (\ref{fig:cpplogo}), se presenta el logo de C++ contenido en la carpeta images.
-
-\begin{figure}[h]
-\includegraphics[width=4cm]{cpplogo.png}
-\centering
-\caption{Logo de C++}
-\label{fig:cpplogo}
-\end{figure}
-
-Las secciones (\ref{intro}), (\ref{contenido}) y (\ref{imagenes}) dependen del estilo del documento.
-
-\bibliographystyle{IEEEtran}
-\bibliography{references}
-
+\section{Pasos a Seguir} \label{pasos}
+\begin{itemize}
+    \item Posición Inicial: Las tarjetas se encuentran sobre la superficie plana antes mencionada (mesa), una al lado de la otra, y sobre ellas se encuentra la hoja de papel con la cara marcada apuntando en dirección contraria a las tarjetas.
+    \begin{enumerate}
+        \item Procedemos a levantar la hoja de papel y descargarla sobre la superficie plana a un lado de la tarjeta que se encuentra al lado derecho, sin cambiar la dirección de la marca de la hoja de papel.
+        \item Cogemos ambas tarjetas con una sola mano (su mano dominante).
+        \item Sin descargarlas en una superficie las juntamos como si fueran una sola tarjeta de manera vertical.
+        \item Luego apoyamos el lado inferior de las tarjetas juntas sobre la hoja de papel con la cara marcada, sin soltar las tarjetas de la mano.
+        \item Con los dedos pulgar y medio agarramos los lados de las tarjetas en una posición media y el dedo índice lo apoyamos en el lado superior de las tarjetas. Todo esto se hará sin soltar las tarjetas.
+        \item Luego los dedos pulgar y medio van a tratar de coger solo la tarjeta del lado de la mano dominante y la intentara separar de la otra tarjeta un poco, mientras que el dedo índice no permite que la parte superior de las tarjetas se separen.
+    \end{enumerate}
+    \item Posición Intermedia: En estos momentos se va a observar como las tarjetas van a formar una especie de triángulo isósceles.
+    \begin{enumerate}
+        \item Al tener las esquinas inferiores de las tarjetas separadas una de la otra y las esquinas superiores juntas, buscara una posición en la cual puedan sostenerse por sí solas sin necesidad de tenerlas con la mano. Puede alejar o acercar las tarjetas como se describió en el punto número (6).
+        \item Cuando considere que las tarjetas están totalmente equilibradas la una de la otra procede a soltarlas.
+        \item Si las tarjetas no se quedan paradas en forma de triángulo isósceles por sí solas, proceda a repetir los puntos (2) al punto (6) de la parte de Primera Posición y a su vez repetiremos todos los puntos de la parte de Posición Intermedia. Por el contrario, si las cartas se quedaron paradas en forma de triángulo isósceles por sí solas haga caso omiso a las primeras indicaciones de este punto.
+    \end{enumerate}
+    \item Posición Final: Ambas tarjetas con sus lados superiores juntos y sus lados inferiores separado formando un triángulo isósceles siendo la base la hoja de papel.
+\end{itemize}
 \end{document}
